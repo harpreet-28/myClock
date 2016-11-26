@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myClock">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+</head>
+
+<body>
+    <h1>Clock</h1>
+    <div ng-controller="TimeController as time">
+        <p>The current time is: {{ time.timeString }}</p>
+        <button ng-click="time.updateTime();">Update Time</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>
